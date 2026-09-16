@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 40%;
+            height: 40%;
+            background-color: #f1f1f1;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+        video{
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div id="left">
+        <center>
+            <h2>image downloaded</h2>
+            <img src="./logo.png" alt="">
+        </center>
+    </div>
+    <div>
+        <center>
+            <h2>image fetched</h2>
+            <img src="https://t3.ftcdn.net/jpg/01/57/36/74/360_F_157367489_FSqP231EvpCB9fqD5s5PhCp8MOuEcfih.jpg" alt="">
+        </center>
+    </div>
+    <div>
+        <center>
+            <h2>Video Downloaded</h2>
+            <video src="./a.mp4" controls></video>
+        </center>
+    </div>
+     <div>
+        <center>
+            <h2>Video fetched(link)</h2>
+            <video autoplay loop muted src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" controls></video>
+        </center>
+    </div>
+     <div>
+        <center>
+            <h2>Video fetched(iframe)</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZB4NAuLLCHg?si=AoCeNSB0ir921LXd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </center>
+    </div>
+</body>
+</html>
