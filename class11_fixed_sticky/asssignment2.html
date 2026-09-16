@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #nav {
+            background-color: rgb(14, 19, 50);
+            color: #f0f0f0;
+            height: 80px;
+            position: sticky;
+            top: 0;
+        }
+
+        #nav img {
+            height: 50px;
+            width: 150px;
+            margin-left: 10%;
+            margin-top: 15px;
+            
+        }
+        a {
+            color: #f0f0f0;
+            text-decoration: none;
+            padding: 10px;
+            margin-left: 7%;
+            margin-bottom: 10px;
+        }
+        h4, h5, p {
+            margin: 2px;
+            padding: 7px;
+        }
+        #card{
+            height: 420px;
+            width: 300px;
+            border: 1px solid black;
+            padding-bottom: 10px;
+            border-radius: 10px;
+            margin-top: 90px;
+            position: relative;
+            display: inline-block;
+        }
+        #one{
+            height: 50%;
+            width: 100%;
+            position: relative;
+        }
+        #one img{
+            height: 100%;
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+        }
+        #card button{
+            height: 30px;
+            width: 100px;
+            border-radius: 5px;
+            background-color: rgb(14, 19, 50);
+            color: #f0f0f0;
+            border: none;
+        }
+        #contact-button{
+            height: 30px;
+            width: 100px;
+            border-radius: 5px;
+            background-color: rgb(14, 19, 50);
+            color: #f0f0f0;
+            border: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+        #heart{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            background-color: #cdbfbf;
+            border-radius: 50%;
+            padding: 7px;
+        }
+        #sale{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 15px;
+            background-color: red;
+            color: #f0f0f0;
+            border-radius: 5px;
+        }
+        #price{
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 20px;
+            background-color: #cdbfbf;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <img src="logo.png" alt="Logo">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+    </div>
+    <center>
+        <div id="card">
+            <div id="one">
+                <p id="sale">Top Sale</p>
+                <p id="heart">❤️</p>
+                <p id="price">₹50000000</p>
+                <img src="https://t3.ftcdn.net/jpg/01/57/36/74/360_F_157367489_FSqP231EvpCB9fqD5s5PhCp8MOuEcfih.jpg" alt="">
+            </div>
+            <div id="two">
+                <h4>Beautiful 2BHK HOUSE</h4>
+                <h5>Pune,Maharashtra</h5>
+                <p>🛏️ 2 Bedrooms</p>
+                <p>🛁 1 Bathroom</p>
+                <p>🌁1200 sq. ft.</p>
+                <button>View Details</button>
+            </div>
+        </div>
+    </center>
+    <div>
+        <button id="contact-button">
+            contact us
+        </button>
+    </div>
+</body>
+</html>

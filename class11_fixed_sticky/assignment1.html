@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: rgb(14, 19, 50);
+            color: #f0f0f0;
+            height: 70px;
+        }
+
+        nav img {
+            height: 50px;
+            width: 150px;
+            position: relative;
+            margin-left: 10%;
+            margin-top: 10px;
+            display: inline-block;
+            
+        }
+        nav table {
+            position: relative;
+            display: inline;
+            margin-left: 20%;
+            padding: 10px;
+            margin-left: 40%;
+        }
+
+        #one,
+        #two,
+        #three,
+        #four {
+            border: 1px solid black;
+            display: inline-block;
+            margin: 20px;
+
+        
+        }
+
+        #one {
+            /* background-color: #f0f0f0; */
+            height: 350px;
+            width: 300px;
+            margin: auto 300px;
+
+        }
+        #two{
+            /* background-color: #f0f0f0; */
+            height: 350px;
+            width: 300px;
+        }
+        #three{
+            /* background-color: #f0f0f0; */
+            height: 300px;
+            width: 300px;
+            margin: auto 300px;
+
+        }
+        #four{
+            /* background-color: #fffefe; */
+            height: 300px;
+            width: 300px;
+        }
+        
+
+        p , h4{
+            margin: 1px;
+            padding: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        
+        <img src="./logo.png" alt="">
+        
+            <table cellspacing="25px" cellpadding="5px">
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                    <th>Header 3</th>
+                    <th><button>Register Now</button></th>
+                </tr>
+            </table>
+    </nav>
+    <div>
+        <center>
+            <h5>Register Now</h5>
+            <h2>Conference Registration</h2>
+            <p>fill in the detail to secure pot at tech conference</p>
+        </center>
+    </div>
+    <div id="one">
+        <h4>Personal Information</h4>
+        <p>Full Name *</p>
+        <input type="text" placeholder="Enter your full name">
+        <p>Email *</p>
+        <input type="email" placeholder="Enter your email">
+        <p>Phone Number *</p>
+        <input type="text" placeholder="Enter your phone number">
+        <p>Date of birth *</p>
+        <input type="date">
+        <p>Gender *:</p>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+    </div>
+    <div id="two">
+        <h4>Conference Preferences</h4>
+        <p>Ticket Type *</p>
+        <input type="checkbox" name="ticket" value="standard"> Student
+        <input type="checkbox" name="ticket" value="Professional"> Professional
+        <input type="checkbox" name="ticket" value="vip"> VIP
+        <p>Areas Of Intrest *</p>
+        <input type="checkbox" value="AI">AI <br>
+        <input type="checkbox" value="Web Development">Web Development <br>
+        <input type="checkbox" value="Cloud">Cloud <br>
+        <input type="checkbox" value="Cyber Security">Cyber Security <br>
+        <input type="checkbox" value="Data Science">Data Science <br>
+        <h4>Workshop Selection</h4>
+        <p>Select Workshop *</p>
+        <select>
+            <option value="workshop1">Workshop 1</option>
+            <option value="workshop2">Workshop 2</option>
+            <option value="workshop3">Workshop 3</option>
+        </select>
+    </div>
+    <br>
+    <div id="three">
+        <h4>Account Information *</h4>
+        <p>Username *</p>
+        <input type="text" placeholder="Enter your username">
+        <p>Password *</p>
+        <input type="password" placeholder="Enter your password">
+        <p>Confirm Password *</p>
+        <input type="password" placeholder="Confirm your password">
+    </div>
+    <div id="four">
+        <h4>Additional Information</h4>
+        <p>Why do you want to attend this conference?</p>
+        <textarea rows="4" cols="30" placeholder="Write your answer here..."></textarea>
+        <br><input type="checkbox">I agree to the <a href="http://" target="_blank" rel="noopener noreferrer">terms and
+            conditions</a> *
+        <br><button>Submit Registration</button>
+    </div>
+</body>
+
+</html>
