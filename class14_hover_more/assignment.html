@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent {
+            margin-left: 400px;
+            height: 400px;
+            width: 590px;
+        }
+
+        #parent #imag {
+            height: 400px;
+            width: 590px;
+            position: absolute;
+            top: 0px;
+            left: 400px;
+            transition: 1.1s;
+        }
+
+        #parent #about{
+            height: 400px;
+            transition: 1s;
+            visibility: hidden;
+            border: 2px dotted dodgerblue;
+            transition-timing-function: step-start;
+
+        }
+
+        #parent:hover #imag {
+            transform: rotateY(90deg);
+            visibility: hidden;
+            transition-timing-function: ease-in;
+
+        }
+
+        #parent:hover #about {
+            transform: rotateY(360deg);
+            visibility: visible;
+            transition-timing-function: step-end;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <img id="imag" src="./Burj_Khalifa_3_Getty.jpg" alt="">
+        <div id="about">
+            <center>
+                <h2 style="color: rgb(62, 251, 251);">THE BURJ KHALIFA</h2>
+
+                <img src="./burj_icon.png" alt="" height="80px">
+                <h4>______________________________________________________</h4>
+                <p><b>The Burj Khalifa in Dubai, United Arab Emirates,</b> is the tallest building in the world.Standing at 828
+                    meters (2,717 feet), this iconic skyscraper features 163 floors. Construction began in 2004, and the
+                    tower officially opened in January 2010. Designed by Skidmore, Owings & Merrill, its unique shape is
+                    inspired by the spider lily flower and Islamic architecture. The tower houses luxury residences,
+                    corporate offices, a hotel, and high-altitude observation decks. Built to help Dubai diversify its
+                    economy toward tourism, the Burj Khalifa stands as a monumental global engineering marvel</p>
+            </center>
+
+        </div>
+    </div>
+</body>
+
+</html>
