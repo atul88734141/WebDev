@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            perspective: 900px;
+            background-color: black;
+        }
+        #main{
+            display: flex;
+        }
+        #parent{
+            height: 400px;
+            width: 500px;
+            margin: 50px auto;
+            position: relative;
+            transition: 2s;
+            transform-style: preserve-3d;
+            
+
+        }
+        #one{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background-color: rgb(30, 207, 210);
+            backface-visibility: hidden;
+            z-index: 1;
+        }
+        #two{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background-color: brown;
+        }
+        #parent:hover{
+            transform: rotateY(180deg);
+
+        }
+        #parent:hover #two{
+            transform: rotateY(180deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="parent">
+        <div id="one">
+            <img src="./Burj_Khalifa_3_Getty.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div id="two">
+            <img src="./burj_icon.png" alt="">
+        </div>
+    </div>
+    <div id="parent">
+        <div id="one">
+            <img src="./Burj_Khalifa_3_Getty.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div id="two">
+            <h3>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores veniam minima, nam soluta excepturi dolore reprehenderit dolor hic delectus minus at consequuntur numquam rerum ducimus totam doloribus dignissimos possimus nisi maxime eligendi praesentium. Itaque autem iusto quis debitis odit at!
+            </h3>
+        </div>
+    </div><div id="parent">
+        <div id="one">
+            <img src="./Burj_Khalifa_3_Getty.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div id="two">
+            <h3>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores veniam minima, nam soluta excepturi dolore reprehenderit dolor hic delectus minus at consequuntur numquam rerum ducimus totam doloribus dignissimos possimus nisi maxime eligendi praesentium. Itaque autem iusto quis debitis odit at!
+            </h3>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
