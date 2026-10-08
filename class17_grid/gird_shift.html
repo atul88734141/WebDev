@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            display: grid;
+
+            grid-template-columns: 200px 200px 200px ;
+            grid-template-rows: 200px 200px 200px;
+            
+
+        }
+        #parent div{
+            border: 2px solid red;
+        }
+        #one{
+            background-color: aqua;
+        }
+        #two{
+            background-color: blueviolet;
+        }
+        #three{
+            background-color: yellow;
+            grid-column: 1 / 2;
+            grid-row: 1;
+        }#four{
+            background-color: tomato;
+        }
+        #five{
+            background-color: seagreen;
+        }
+        #six{
+            background-color: peru;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+        <div id="four"></div>
+        <div id="five"></div>
+        <div id="six"></div>
+
+    </div>
+    
+</body>
+</html>
