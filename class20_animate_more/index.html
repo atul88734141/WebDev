@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            display: flex;
+            overflow: hidden;
+            border: 5px solid black;
+        }
+        #main {
+            /* border: 2px solid; */
+            display: flex;
+            animation-name: a;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+
+        }
+
+        #main div {
+            border: 2px solid skyblue;
+            width: 200px;
+            height: 200px;
+            /* animation-name: a; */
+            background-color: aqua;
+            /* margin-left: 10px; */
+            
+        }
+        #main1{
+            display: flex;
+            /* width: 73vw; */
+            /* border: 2px solid; */
+            animation-name: a;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+
+            
+        }
+
+        #main1 div{
+            border: 2px solid skyblue;
+            width: 200px;
+            height: 200px;
+            /* animation-name: a; */
+            background-color: aqua;
+            /* margin-left: 10px; */
+            
+        }
+
+        #main1 div img{
+            height: 100%;
+            width: 100%;
+        }
+
+        #main div img {
+            height: 100%;
+            width: 100%;
+        }
+
+        #parent:hover #main{
+            animation-play-state: paused;
+        }
+        #parent:hover #main1{
+            animation-play-state: paused;
+        }
+
+        @keyframes a {
+            0% {
+                /* width: 200px; */
+                transform: translateX(0%);
+
+            }
+
+            100% {
+
+                /* width: 0px; */
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div id="main">
+            <div><img src="./866-536x354.jpg" alt="">1</div>
+            <div><img src="./866-536x354.jpg" alt="">2</div>
+            <div><img src="./866-536x354.jpg" alt="">3</div>
+            <div><img src="./866-536x354.jpg" alt="">4</div>
+            <div><img src="./866-536x354.jpg" alt="">5</div>
+            <div><img src="./866-536x354.jpg" alt="">6</div>
+        </div>
+        <div id="main1">
+            <div><img src="./866-536x354.jpg" alt="">1</div>
+            <div><img src="./866-536x354.jpg" alt="">2</div>
+            <div><img src="./866-536x354.jpg" alt="">3</div>
+            <div><img src="./866-536x354.jpg" alt="">4</div>
+            <div><img src="./866-536x354.jpg" alt="">5</div>
+            <div><img src="./866-536x354.jpg" alt="">6</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
