@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name = "atul";
+        var lastname = "kumar";
+        console.log(name,lastname);
+        console.log(`${name} ${lastname}`);
+
+        //-----------------------------------------------------------------------------------------------------
+        // const a = 10; // cannot be redeclared or reassigned
+        // const a = 30;
+        // console.log(a);
+
+        // var b = 10; // can be redeclared or reassigned
+        // var b = 20;
+        // b = 30;
+        // console.log(b);
+
+        let b = 20;   // cannot be redeclared
+        b = 40;
+        console.log(b);
+
+        //-----------------------------------------------------------------------------------------------------
+
+        console.log(5==5); //t
+        console.log(5=="5");//t
+        console.log(5==="5"); //false
+
+        // + makes string and - makes number if number is ...
+        console.log("5"+5); //55 str
+        console.log(5+5); //10 number
+        console.log("5"+"5"); //55 
+        console.log("5"-5); // 0 number
+        console.log(5-"5"); // 0 number
+
+        
+
+        console.log(undefined+undefined); // NaN
+        console.log(undefined+1) // NaN
+
+        console.log(null+null);  // 0
+        console.log(null==0) //false
+        console.log(null+1) ;  // 1
+
+        console.log(true+1) ; // 2
+        console.log(true == 1); //true
+        console.log(true === 1); //false
+        console.log(true+0 === 1); //true
+
+
+
+        
+    </script>
+</body>
+</html>
